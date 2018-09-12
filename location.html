@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Location | Weekend Hang-out</title>
+	
+
+	
+<!--Style-->
+	<link href="css/main.css" rel="stylesheet">
+	
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	
+<!--Tags-->
+<meta name="description" content="My Location" />
+	
+</head>
+	
+<body>
+
+<div class="container">
+<!--Nav-->
+	<div class="row clearfix topnav">
+		<div class="column one-fifth nopadding logomargin">
+			<a href="index.html"><img src="images/logo.gif" alt="Logo" /></a>
+		</div>
+	
+		<div class="column three-fourths nopadding nomargin">
+			<div class="nav">
+				<ul>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="location.html">Location</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> <!--close nav-->
+	
+	<div class="line"></div>
+	
+	
+	<h1 class="text-center">Find Us</h1>
+	<div class="row clearfix">
+		
+		
+		<style type="text/css">
+        #map{
+            width: 1100px;
+            height:550px;
+            margin: 20px auto;
+            border:1px solid gray;
+        }
+        .content{
+            width: 400px;
+        }
+    </style>
+</head>
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyANJd8LvehOZALjsjZnRj8XsK9egZqSNek&sensor=false" type="text/javascript" charset="utf-8" async defer></script>
+<body onload="initMap()">
+<div id="map"></div>
+</body>
+<script type="text/javascript">
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -41.295196, lng: 174.775609},
+            zoom: 16
+        });
+        var marker = new google.maps.Marker({
+            position: {lat: -41.295196, lng: 174.775609},
+            map: map,
+            title:'Weekend Hang-out'
+        });
+        var contentString = '<div class="content"><h3>Weekend Hang-out</h3><p>We are here. You can find us during business hours. Please contact our social media account at any other time.</p></div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+	</div>
+	
+	
+	
+
+
+
+	
+</div> <!--close container-->	
+	
+<!--Footer-->	
+	<div class="footer">
+		<div class="pull-left footertext">
+			<a href="recruitment.html">Recruitment</a> 
+			"|"
+			<a href="contact.html">Contact</a>
+		</div>
+		
+		<div class="pull-right">
+			<a href="#" target="_blank"><img src="images/facebooklogo.png"  alt="Facebook"/></a>
+			<a href="#" target="_blank"><img src="images/instagramlogo.png" alt="Instagram"/></a>
+			<a href="#" target="_blank"><img src="images/twitterlogo.png" alt="Twitter"/></a>
+		
+		</div>
+	
+	</div><!--close footer-->
+
+	
+</body>
+	
+</html>

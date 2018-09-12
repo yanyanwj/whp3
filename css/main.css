@@ -1,0 +1,433 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* tells box-sizing to work in different browsers */
+    box-sizing: border-box; /* makes padding not part of the entire width*/
+}
+
+
+/* Grid */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+	min-height: 100%;
+	position: relative;
+}
+
+.column {
+    float: left;
+    margin-left: 5%;
+    padding: 5%;
+}
+
+.column:first-child {
+    margin-left: 0%;
+}
+
+.column.full {
+    width: 100%;
+}
+
+.column.three-fourths {
+    width: 73.75%;
+}
+
+.column.two-thirds {
+    width: 65%; 
+}
+
+.column.half {
+    width: 47.5%; 
+}
+
+.column.one-third {
+    width: 30%; 
+}
+
+.column.one-fourth {
+    width: 21.25%; 
+}
+
+.column.one-fifth {
+	width: 16%;
+}
+
+.column.two-fifths {
+	width: 32%;
+}
+
+.column.three-fifths {
+	width: 48%;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+
+/*Alignment */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+
+/* Create Rows */
+.clearfix:before, .clearfix:after { 
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both; 
+}
+
+.clearfix { 
+    *zoom: 1;
+}
+
+
+/* Navigation */
+.nav {
+    clear: both;
+    width: 75%;
+    text-align: center;
+}
+
+.nav ul {
+    width: 75%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    width: 25%;
+    display: inline;
+    float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2em;
+}
+
+.nav li a:link {
+    color: #888;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.nav li a:visited {
+	color: #888;
+}
+
+.nav li a:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+.topnav {
+	position: relative; 
+}
+
+
+
+
+
+.filternav {
+    clear: both;
+    width: 75%;
+    text-align: center;
+}
+
+.filternav ul {
+    width: 75%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	position: relative;
+}
+
+.filternav li {
+    width: 25%;
+    display: inline;
+    float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+}
+
+.filternav li a:link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.filternav li a:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+.filternav li a:visited {
+	color: black;
+}
+
+.filternav ul li ul {
+  padding: 0;
+  position: absolute;
+  display: none;
+  visibility: hidden;
+}
+
+ul li ul li {  
+  display: block; 
+}
+
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+	width: 25%;
+	background: white;
+}
+
+.filternav ul ul li {
+	position: relative;
+	float: none;
+}
+
+
+/*Elements*/
+
+.imgscale {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: Georgia, serif;
+	font-size: 3em;
+	font-weight: 100;
+	padding: 0 0 0 2.5%;
+	margin-bottom: 0;
+	color: #333;
+}
+
+h2 {
+	font-family: Georgia, serif;
+	font-size: 2em;
+	font-weight: 100;
+	padding: 0 0 0 2.5%;
+	margin-bottom: 0;
+	margin-top: 2%;
+	color: #333;
+}
+
+h3 {
+	font-family: Georgia, serif;
+	color: #333;
+}
+
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #333;
+	font-size: 1.1em;
+}
+
+p a {
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #999;
+	font-size: 1.1em;
+}
+
+.line {
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.dashedline {
+	border-bottom: 1px dashed #E8E8E8;
+}
+
+.marginspace {
+	padding: 2%;
+}
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+.logomargin {
+	margin-left: 15px;
+}
+
+.nomargin {
+	margin-top: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.etsybutton {
+	background: lightgray;
+	border-radius: 5px;
+	padding: 3%;
+	font-size: 1.5em;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Georgia, serif;
+	margin: 15% 30% 15% 30%;
+	text-decoration: none;
+}
+
+a .etsybutton {
+	text-decoration: none;
+	color: white;
+	font-family: Georgia, serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.etsybutton a {
+	text-decoration: none;
+}
+
+a:hover .etsybutton {
+	background: #e5e5e5;
+}
+
+.breadcrumbs {
+	font-size: .9em;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #333;
+	margin-top: 2%;
+	margin-left: 2.5%;
+}
+
+.breadcrumbs a:visited {
+	font-size: .9em;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #333;
+	margin-top: 2%;
+	text-decoration: none;
+}
+
+.sansserif {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.padding25 {
+	padding: 0 0 0 2.5%;
+}
+
+
+/*Footer*/
+.footer {
+	background: black;
+    height: 60px;
+    width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 35px 15px 35px;
+	clear: both;
+	margin-bottom: 0;
+}
+
+.footer a {
+	color: #fff;
+	font-family: Georgia, serif;
+	text-decoration: none;
+}
+
+.footertext {
+	padding-top: 5px;
+}
+
+.footer a:hover {
+	color: #888;
+}
+
+
+
+/*Gallery*/
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    height: 375px;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+}
+
+div.img a:hover img {
+    opacity: 0.4;
+}
+
+div.title {
+	text-align: center;
+	margin: 5px;
+	font-family: Georgia, serif;
+	font-size: 1.25em;
+	color: #333;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+	width: 250px;
+    margin: 5px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+}
+
+
+@media screen and (max-width: 640px) {
+
+	.column.full, 
+	.column.two-thirds, 
+	.column.half, 
+	.column.one-third, 
+	.column.one-fourth {
+		width: 100%; 
+		margin: 0;
+		float: none;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+	
+	.nav li {
+		width: 100%;	
+	}
+	
+}
